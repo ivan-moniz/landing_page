@@ -75,9 +75,14 @@ p {
   box-shadow: 5px 5px 10px hsl(233, 100%, 69%);
 }
 
+
+
 .section-1 { padding: 80px; }
 .section-1 > h2 { text-align: center; }
-.section-1 > p { text-align: center; }
+.section-1 > p {
+  text-align: center;
+  padding: 0 15rem;
+}
 
 .grid-container {
   display: grid;
@@ -156,5 +161,74 @@ ul li {
   list-style: none;
   color: hsl(210, 10%, 33%);
   line-height: 1.5;
+
+}
+
+
+@media screen and (max-width: 376px) {
+  button {
+    width: 20rem;
+    margin: .5rem;
+  }
+
+  .section-1 > h2 {
+    padding-top: 17rem;
+
+  }
+  .section-1 > p {
+    padding: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    position: relative;
+    left: 20%;
+  }
+
+  .text-container {
+    transform: translateY(-25%);
+    text-align: center;
+  }
+  .flex-container > img {
+    width: 100%;
+    padding-top:  -10rem;
+  }
+
+  .icon-container {
+    grid-template-columns: 1fr;
+  }
+  .wrap {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-cols > img {
+    width: 20%;
+    position: relative;
+    left: 40%;
+
+  }
+
+  ul li {
+     padding-top: 1rem;
+  }
+
 
 }
